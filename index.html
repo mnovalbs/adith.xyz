@@ -1,0 +1,481 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>Adithya Ekananda</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description"
+    content="Experienced as lab assistant in biosystematics and animal behaviors. Skilled in identifying animals, in teaching biology, and in speaking English. Had a great time spent on fish breeding and fishkeeping. Able to think abstractly and critically." />
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+  <style amp-custom>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --blue: #335384;
+      --primary: #057F84;
+      --padding: 30px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #444;
+    }
+
+    section {
+      margin-top: var(--padding);
+      margin-bottom: var(--padding);
+    }
+
+    section.x {
+      margin: var(--padding);
+    }
+
+    #container {
+      max-width: 1010px;
+      margin: 0 auto;
+      display: flex;
+      background-color: #fff;
+    }
+
+    #sidebar {
+      width: 300px;
+      background-color: var(--primary);
+    }
+
+    #sidebar section {
+      color: #fff;
+    }
+
+    #sidebar section h3 {
+      margin: 0;
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #111;
+    }
+
+    #content {
+      padding: var(--padding);
+      flex-grow: 1;
+    }
+
+    .primary-color {
+      color: var(--primary);
+    }
+
+    .profile-picture {
+      width: 170px;
+      margin: 0 auto;
+    }
+
+    .profile-name {
+      margin: 0;
+      font-size: 2.7rem;
+    }
+
+    .profile-picture img {
+      border-radius: 100%;
+    }
+
+    .section-content ul {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    .contact {
+      display: flex;
+      align-content: center;
+    }
+
+    .contact-list li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .contact-list li {
+      font-size: 14px;
+    }
+
+    .contact-list a {
+      color: #ffffff;
+      text-decoration: none;
+      line-height: 25px;
+    }
+
+    .contact img {
+      background: #fff;
+      border-radius: 100%;
+    }
+
+    .contact span {
+      display: flex;
+      margin-right: 5px;
+    }
+
+    .section-list {
+      display: flex;
+      align-items: start;
+      margin-bottom: 24px;
+    }
+
+    .section-list h5 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .section-list .image {
+      margin-right: 24px;
+    }
+
+    .section-list .detail {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .section-list .detail .info {
+      margin: 3px 0;
+    }
+
+    .section-list .detail ul {
+      padding-left: 18px;
+      margin: 5px 0 0 0;
+    }
+
+    .section-list h5,
+    .section-list label {
+      color: #333;
+    }
+
+    .section-list .detail p {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .skill-list {
+      padding-left: 18px;
+      margin: 5px 0 0 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    ul.skill {
+      padding-left: 18px;
+      list-style: disc;
+    }
+
+    .skill li {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      #container {
+        flex-direction: column;
+      }
+
+      #sidebar {
+        width: 100%;
+      }
+    }
+
+    @media print {
+      #experience-section {
+        padding-top: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <section class="x">
+        <div class="profile-picture">
+          <amp-img src="adith.jpg" alt="Adithya Ekananda" height="1" width="1" layout="responsive"></amp-img>
+        </div>
+      </section>
+
+      <section class="x">
+        <h3>Contact</h3>
+        <div class="section-content">
+          <ul class="contact-list">
+            <li>
+              <div class="contact">
+                <span>
+                  <amp-img layout="fixed" width="24" height="24" src="/icon/email.svg" />
+                </span>
+                <a href="mailto:adithyasalim@yahoo.com">
+                  adithyasalim@yahoo.com
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="contact">
+                <span>
+                  <amp-img layout="fixed" width="24" height="24" src="/icon/phone.svg" />
+                </span>
+                <a href="tel:085718260324">
+                  0857-1826-0324
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="contact">
+                <span>
+                  <amp-img layout="fixed" width="24" height="24" src="/icon/linkedin.svg" />
+                </span>
+                <a href="https://linkedin.com/in/adithya-ekananda7a0088164" target="_blank">
+                  LinkedIn
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="x">
+        <h3>Skill</h3>
+        <div class="section-content">
+          <ul class="skill">
+            <li>Teaching</li>
+            <li>Critical Thinking</li>
+            <li>Creative Writing</li>
+            <li>Aquaculture</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="x">
+        <h3>Language</h3>
+        <div class="section-content">
+          <ul class="skill">
+            <li>Bahasa Indonesia</li>
+            <li>English</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <div id="content">
+      <h1 class="primary-color profile-name">Adithya Ekananda</h1>
+
+      <p>
+        Experienced as lab assistant in biosystematics and animal behaviors. Skilled in identifying animals, in teaching
+        biology, and in speaking English. Had a great time spent on fish breeding and fishkeeping. Able to think
+        abstractly and critically.
+      </p>
+
+      <section>
+        <h3 class="primary-color">Ability</h3>
+        <ul class="skill-list">
+          <li>
+            Adept at teaching and communicating flexibly
+          </li>
+          <li>
+            Able to coordinate and work together in teams
+          </li>
+          <li>
+            Easy to absorb knowledge and adapt to new environments
+          </li>
+          <li>
+            Mastering basic aquaculture techniques and the core mechanisms of fisheries
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="primary-color">Education</h3>
+
+        <div class="section-list">
+          <div class="image">
+            <amp-img src="/educations/plymouth.png" alt="Plymouth University" height="56" width="56">
+          </div>
+          <div class="detail">
+            <h5>University of Plymouth</h5>
+            <label>M.Sc, Applied Marine Science</label>
+            <div class="info">
+              <small>2019 - 2021, United Kingdom</small>
+            </div>
+            <p>
+              Activities and Societies: Managing Marine Ecosystems, Coastal Erosion and Protection, Managing Coastal
+              Environments
+            </p>
+          </div>
+        </div>
+
+        <div class="section-list">
+          <div class="image">
+            <amp-img src="/educations/itb.jpeg" alt="Institut Teknologi Bandung" height="56" width="56">
+          </div>
+          <div class="detail">
+            <h5>Institut Teknologi Bandung</h5>
+            <label>Bachelor's degree, Life Science and Technology</label>
+            <div class="info">
+              <small>2012 - 2018, Indonesia</small>
+            </div>
+            <p>
+              Activities and Societies: Assistant of Biosystematics and Animal Behavior, Aquaculture and Fish Breeding,
+              Part-time Teaching Biology to High-school Students, Studied Vertebrate and Invertebrate Paleontology,
+              Adept in Evolution and Taxonomy, and A Member of Kendo and Archery Club
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience-section">
+        <h3 class="primary-color">Experience</h3>
+        <div class="section-list">
+          <div class="detail">
+            <h5>Bhakti Edukasi Nusantara</h5>
+            <label>Biology Volunteer Tutor</label>
+            <div class="info">
+              <small>2015-2016</small>
+            </div>
+            <p>
+            <ul>
+              <li>
+                Teaching biology to 3rd graders of high school to prepare for national exams and admission to college
+              </li>
+              <li>
+                Provide consultation and counseling for biology-related school assignments
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="section-list">
+          <div class="detail">
+            <h5>ConocoPhillips Indonesia</h5>
+            <label>Internship</label>
+            <div class="info">
+              <small>2015</small>
+            </div>
+            <p>
+            <ul>
+              <li>
+                Analyzing the census of wildlife around the oil refinery area in South Sumatra
+              </li>
+              <li>
+                Checking the health condition of the ecosystem around the oil refinery area in South Sumatra
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="section-list">
+          <div class="detail">
+            <h5>Prosus Inten</h5>
+            <label>Biology Teacher</label>
+            <div class="info">
+              <small>2015</small>
+            </div>
+            <p>
+            <ul>
+              <li>
+                Teaching biology to junior high and high school students in Tangerang City and South Tangerang
+              </li>
+              <li>
+                Provide consultation and counseling for biology-related school assignments
+              </li>
+              <li>
+                To accommodate students to develop their skills related to biology
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="primary-color">Award</h3>
+        <div class="section-list">
+          <div class="detail">
+            <h5>Quora Top Writer <small>- 2018</small></h5>
+            <p>
+              Write more than a hundred writings about biology, history, and geopolitics
+            </p>
+          </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+
+</html>
